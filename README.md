@@ -20,7 +20,7 @@ MALDIquant, MALDIquantForeign, tidyverse, DescTools, reshape2, grDevices, matrix
 /proj/data/Sample1/Sample1Replicate2.txt\
 /proj/data/Sample2\
 /proj/data/Sample2/Sample2Replicate1.txt\
-/proj/data/Sample2/Sample2Replicate2.txt\
+/proj/data/Sample2/Sample2Replicate2.txt
 ## How to run the code?
 "source(main.R)" on the Rstudio console or "Rscript main.R" on the terminal.
 ## Output
