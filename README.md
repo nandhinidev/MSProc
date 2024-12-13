@@ -10,7 +10,19 @@ This code processes mass spectrometry data (MS) using R package ['MALDIquant'](h
 ## R packages used
 MALDIquant, MALDIquantForeign, tidyverse, DescTools, reshape2, grDevices, matrixStats, ggplot2, coop
 ## Input
+* Individual mass spectrum of replicates for a sample should be inside its own directory for that sample as mzXML or mzML files (generic MS data format)
+* Each sample directory should be inside "data" directory
+* Directory names are parsed for sample ids, so name appropriately. See below for correct directory structure
+/proj
+/proj/data
+/proj/data/Sample1
+/proj/data/Sample1/Sample1Replicate1.txt
+/proj/data/Sample1/Sample1Replicate2.txt
+/proj/data/Sample2
+/proj/data/Sample2/Sample2Replicate1.txt
+/proj/data/Sample2/Sample2Replicate2.txt
 ## How to run the code?
+"source(main.R)" on the Rstudio console or "Rscript main.R" on the terminal.
 ## Output
 A directory named 'output' is created inside 'proj' directory. Inside a sub-directory, the following files are saved:
 * Directory with averaged spectra (data_avg) for each sample 
